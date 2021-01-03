@@ -486,7 +486,7 @@ SetOption110<a class="cmnd" id="setoption110"></a>|`0` = _(default)_<BR>`1` = di
 SetOption111<a class="cmnd" id="setoption111"></a>|`0` = _(default)_<BR>`1` = use frequency output for buzzer pin instead of on/off signal, for piezo buzzers
 SetOption112<a class="cmnd" id="setoption112"></a>|`0` = _(default)_<BR>`1` = use friendly name in Zigbee topic (use with `SetOption89)
 SetOption113<a class="cmnd" id="setoption113"></a>|_works only with rotary dial button_<BR>`0` = _(default)_<BR>`1` = set dimmer low on rotary dial after power off
-SetOption114<a class="cmnd" id="setoption114"></a>|Detach switches from relays and send MQTT messages instead<BR>`0` = disabled *(default)*<BR>`1` = enabled<BR> Example result: `{"Switch1":{"Action":"ON"}}`
+SetOption114<a class="cmnd" id="setoption114"></a>|Detach switches from relays and send MQTT messages instead<BR>`0` = disabled *(default)*<BR>`1` = enabled<BR> Example result: `{"Switch1":{"Action":"ON"}} Note: switches will not present through the Home Assistant Tasmota integration if switchmode is set to 0.`
 SetOption115<a class="cmnd" id="setoption115"></a>|Enable ESP32 MI32 BLE<BR>`0` = disabled *(default)*<BR>`1` = enabled
 SetOption116<a class="cmnd" id="setoption116"></a>|Disable auto-query of zigbee light devices (avoids network storms with large groups)<BR>`0` = enabled *(default)*<BR>`1` = disabled
 SetOption117<a class="cmnd" id="setoption117"></a>|Light fading at fixed duration instead of fixed slew rate<BR>`0` = disabled *(default)*<BR>`1` = enabled
